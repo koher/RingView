@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6F407AC1880168900F747C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F407AB1880168900F747C4 /* Foundation.framework */; };
+		D6F407D6188016C800F747C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F407AB1880168900F747C4 /* Foundation.framework */; };
+		D6F407D8188016C800F747C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F407D7188016C800F747C4 /* CoreGraphics.framework */; };
+		D6F407DF188016C800F747C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6F407DD188016C800F747C4 /* InfoPlist.strings */; };
+		D6F407E1188016C800F747C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F407E0188016C800F747C4 /* main.m */; };
+		D6F407E5188016C800F747C4 /* KUIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F407E4188016C800F747C4 /* KUIAppDelegate.m */; };
+		D6F407E8188016C800F747C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F407E6188016C800F747C4 /* Main.storyboard */; };
+		D6F407EB188016C800F747C4 /* KUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F407EA188016C800F747C4 /* KUIViewController.m */; };
+		D6F407ED188016C800F747C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F407EC188016C800F747C4 /* Images.xcassets */; };
+		D6F408081880172800F747C4 /* KUIRingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F408071880172800F747C4 /* KUIRingView.m */; };
+		D6F4080A1880176B00F747C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F408091880176B00F747C4 /* UIKit.framework */; };
+		D6F4081D188017CB00F747C4 /* KUIAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F4080E188017CB00F747C4 /* KUIAlbumViewController.m */; };
+		D6F4081E188017CB00F747C4 /* KUIColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F40810188017CB00F747C4 /* KUIColorViewController.m */; };
+		D6F4081F188017CB00F747C4 /* KUIDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F40812188017CB00F747C4 /* KUIDateViewController.m */; };
+		D6F40820188017CB00F747C4 /* KUIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F40814188017CB00F747C4 /* KUIImageViewController.m */; };
+		D6F40821188017CB00F747C4 /* KUIMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F40816188017CB00F747C4 /* KUIMovieViewController.m */; };
+		D6F40822188017CB00F747C4 /* KUITimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F40818188017CB00F747C4 /* KUITimeViewController.m */; };
+		D6F40826188017F400F747C4 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F40825188017F400F747C4 /* AssetsLibrary.framework */; };
+		D6F40828188017FB00F747C4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F40827188017FB00F747C4 /* MediaPlayer.framework */; };
+		D6F4082A18801A9A00F747C4 /* libRingView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F407A81880168900F747C4 /* libRingView.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6F4082B18801AAE00F747C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6F407A01880168900F747C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6F407A71880168900F747C4;
+			remoteInfo = RingView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D6F407A61880168900F747C4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D6F407A81880168900F747C4 /* libRingView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRingView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F407AB1880168900F747C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D6F407AF1880168900F747C4 /* RingView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RingView-Prefix.pch"; sourceTree = "<group>"; };
+		D6F407D5188016C800F747C4 /* Samples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Samples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F407D7188016C800F747C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D6F407DC188016C800F747C4 /* Samples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Samples-Info.plist"; sourceTree = "<group>"; };
+		D6F407DE188016C800F747C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6F407E0188016C800F747C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6F407E2188016C800F747C4 /* Samples-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Samples-Prefix.pch"; sourceTree = "<group>"; };
+		D6F407E3188016C800F747C4 /* KUIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KUIAppDelegate.h; sourceTree = "<group>"; };
+		D6F407E4188016C800F747C4 /* KUIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KUIAppDelegate.m; sourceTree = "<group>"; };
+		D6F407E7188016C800F747C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6F407E9188016C800F747C4 /* KUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KUIViewController.h; sourceTree = "<group>"; };
+		D6F407EA188016C800F747C4 /* KUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KUIViewController.m; sourceTree = "<group>"; };
+		D6F407EC188016C800F747C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D6F408061880172800F747C4 /* KUIRingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KUIRingView.h; sourceTree = "<group>"; };
+		D6F408071880172800F747C4 /* KUIRingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KUIRingView.m; sourceTree = "<group>"; };
+		D6F408091880176B00F747C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D6F4080D188017CB00F747C4 /* KUIAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KUIAlbumViewController.h; sourceTree = "<group>"; };
+		D6F4080E188017CB00F747C4 /* KUIAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KUIAlbumViewController.m; sourceTree = "<group>"; };
+		D6F4080F188017CB00F747C4 /* KUIColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KUIColorViewController.h; sourceTree = "<group>"; };
+		D6F40810188017CB00F747C4 /* KUIColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KUIColorViewController.m; sourceTree = "<group>"; };
+		D6F40811188017CB00F747C4 /* KUIDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KUIDateViewController.h; sourceTree = "<group>"; };
+		D6F40812188017CB00F747C4 /* KUIDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KUIDateViewController.m; sourceTree = "<group>"; };
+		D6F40813188017CB00F747C4 /* KUIImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KUIImageViewController.h; sourceTree = "<group>"; };
+		D6F40814188017CB00F747C4 /* KUIImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KUIImageViewController.m; sourceTree = "<group>"; };
+		D6F40815188017CB00F747C4 /* KUIMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KUIMovieViewController.h; sourceTree = "<group>"; };
+		D6F40816188017CB00F747C4 /* KUIMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KUIMovieViewController.m; sourceTree = "<group>"; };
+		D6F40817188017CB00F747C4 /* KUITimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KUITimeViewController.h; sourceTree = "<group>"; };
+		D6F40818188017CB00F747C4 /* KUITimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KUITimeViewController.m; sourceTree = "<group>"; };
+		D6F40825188017F400F747C4 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		D6F40827188017FB00F747C4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6F407A51880168900F747C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6F407AC1880168900F747C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6F407D2188016C800F747C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6F4082A18801A9A00F747C4 /* libRingView.a in Frameworks */,
+				D6F40828188017FB00F747C4 /* MediaPlayer.framework in Frameworks */,
+				D6F40826188017F400F747C4 /* AssetsLibrary.framework in Frameworks */,
+				D6F4080A1880176B00F747C4 /* UIKit.framework in Frameworks */,
+				D6F407D8188016C800F747C4 /* CoreGraphics.framework in Frameworks */,
+				D6F407D6188016C800F747C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6F4079F1880168900F747C4 = {
+			isa = PBXGroup;
+			children = (
+				D6F407AD1880168900F747C4 /* RingView */,
+				D6F407DA188016C800F747C4 /* Samples */,
+				D6F407AA1880168900F747C4 /* Frameworks */,
+				D6F407A91880168900F747C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6F407A91880168900F747C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6F407A81880168900F747C4 /* libRingView.a */,
+				D6F407D5188016C800F747C4 /* Samples.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6F407AA1880168900F747C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6F407AB1880168900F747C4 /* Foundation.framework */,
+				D6F407D7188016C800F747C4 /* CoreGraphics.framework */,
+				D6F408091880176B00F747C4 /* UIKit.framework */,
+				D6F40825188017F400F747C4 /* AssetsLibrary.framework */,
+				D6F40827188017FB00F747C4 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6F407AD1880168900F747C4 /* RingView */ = {
+			isa = PBXGroup;
+			children = (
+				D6F408061880172800F747C4 /* KUIRingView.h */,
+				D6F408071880172800F747C4 /* KUIRingView.m */,
+				D6F407AE1880168900F747C4 /* Supporting Files */,
+			);
+			path = RingView;
+			sourceTree = "<group>";
+		};
+		D6F407AE1880168900F747C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6F407AF1880168900F747C4 /* RingView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6F407DA188016C800F747C4 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				D6F407E3188016C800F747C4 /* KUIAppDelegate.h */,
+				D6F407E4188016C800F747C4 /* KUIAppDelegate.m */,
+				D6F407E6188016C800F747C4 /* Main.storyboard */,
+				D6F407E9188016C800F747C4 /* KUIViewController.h */,
+				D6F407EA188016C800F747C4 /* KUIViewController.m */,
+				D6F4080D188017CB00F747C4 /* KUIAlbumViewController.h */,
+				D6F4080E188017CB00F747C4 /* KUIAlbumViewController.m */,
+				D6F4080F188017CB00F747C4 /* KUIColorViewController.h */,
+				D6F40810188017CB00F747C4 /* KUIColorViewController.m */,
+				D6F40811188017CB00F747C4 /* KUIDateViewController.h */,
+				D6F40812188017CB00F747C4 /* KUIDateViewController.m */,
+				D6F40813188017CB00F747C4 /* KUIImageViewController.h */,
+				D6F40814188017CB00F747C4 /* KUIImageViewController.m */,
+				D6F40815188017CB00F747C4 /* KUIMovieViewController.h */,
+				D6F40816188017CB00F747C4 /* KUIMovieViewController.m */,
+				D6F40817188017CB00F747C4 /* KUITimeViewController.h */,
+				D6F40818188017CB00F747C4 /* KUITimeViewController.m */,
+				D6F407EC188016C800F747C4 /* Images.xcassets */,
+				D6F407DB188016C800F747C4 /* Supporting Files */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		D6F407DB188016C800F747C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6F407DC188016C800F747C4 /* Samples-Info.plist */,
+				D6F407DD188016C800F747C4 /* InfoPlist.strings */,
+				D6F407E0188016C800F747C4 /* main.m */,
+				D6F407E2188016C800F747C4 /* Samples-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6F407A71880168900F747C4 /* RingView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6F407CB1880168900F747C4 /* Build configuration list for PBXNativeTarget "RingView" */;
+			buildPhases = (
+				D6F407A41880168900F747C4 /* Sources */,
+				D6F407A51880168900F747C4 /* Frameworks */,
+				D6F407A61880168900F747C4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RingView;
+			productName = RingView;
+			productReference = D6F407A81880168900F747C4 /* libRingView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D6F407D4188016C800F747C4 /* Samples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6F40800188016C800F747C4 /* Build configuration list for PBXNativeTarget "Samples" */;
+			buildPhases = (
+				D6F407D1188016C800F747C4 /* Sources */,
+				D6F407D2188016C800F747C4 /* Frameworks */,
+				D6F407D3188016C800F747C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6F4082C18801AAE00F747C4 /* PBXTargetDependency */,
+			);
+			name = Samples;
+			productName = Samples;
+			productReference = D6F407D5188016C800F747C4 /* Samples.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6F407A01880168900F747C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = koherent.org;
+			};
+			buildConfigurationList = D6F407A31880168900F747C4 /* Build configuration list for PBXProject "RingView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6F4079F1880168900F747C4;
+			productRefGroup = D6F407A91880168900F747C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6F407A71880168900F747C4 /* RingView */,
+				D6F407D4188016C800F747C4 /* Samples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6F407D3188016C800F747C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6F407ED188016C800F747C4 /* Images.xcassets in Resources */,
+				D6F407DF188016C800F747C4 /* InfoPlist.strings in Resources */,
+				D6F407E8188016C800F747C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6F407A41880168900F747C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6F408081880172800F747C4 /* KUIRingView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6F407D1188016C800F747C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6F4081D188017CB00F747C4 /* KUIAlbumViewController.m in Sources */,
+				D6F40822188017CB00F747C4 /* KUITimeViewController.m in Sources */,
+				D6F4081E188017CB00F747C4 /* KUIColorViewController.m in Sources */,
+				D6F4081F188017CB00F747C4 /* KUIDateViewController.m in Sources */,
+				D6F40821188017CB00F747C4 /* KUIMovieViewController.m in Sources */,
+				D6F40820188017CB00F747C4 /* KUIImageViewController.m in Sources */,
+				D6F407E5188016C800F747C4 /* KUIAppDelegate.m in Sources */,
+				D6F407E1188016C800F747C4 /* main.m in Sources */,
+				D6F407EB188016C800F747C4 /* KUIViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6F4082C18801AAE00F747C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6F407A71880168900F747C4 /* RingView */;
+			targetProxy = D6F4082B18801AAE00F747C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6F407DD188016C800F747C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6F407DE188016C800F747C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D6F407E6188016C800F747C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6F407E7188016C800F747C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6F407C91880168900F747C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D6F407CA1880168900F747C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6F407CC1880168900F747C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RingView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RingView/RingView-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RingView;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D6F407CD1880168900F747C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RingView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RingView/RingView-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RingView;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D6F40801188016C800F747C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Samples/Samples-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Samples/Samples-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D6F40802188016C800F747C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Samples/Samples-Prefix.pch";
+				INFOPLIST_FILE = "Samples/Samples-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6F407A31880168900F747C4 /* Build configuration list for PBXProject "RingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6F407C91880168900F747C4 /* Debug */,
+				D6F407CA1880168900F747C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6F407CB1880168900F747C4 /* Build configuration list for PBXNativeTarget "RingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6F407CC1880168900F747C4 /* Debug */,
+				D6F407CD1880168900F747C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6F40800188016C800F747C4 /* Build configuration list for PBXNativeTarget "Samples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6F40801188016C800F747C4 /* Debug */,
+				D6F40802188016C800F747C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6F407A01880168900F747C4 /* Project object */;
+}

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vch-uY-Oi1">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="fce-eq-jjf">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="vch-uY-Oi1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="szm-gH-IV2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZF9-Rk-uIN" kind="relationship" relationship="rootViewController" id="62n-wF-38U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ref-am-uY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="207"/>
+        </scene>
+        <!--View Controller - Menu-->
+        <scene sceneID="hdB-1F-6uj">
+            <objects>
+                <viewController id="ZF9-Rk-uIN" customClass="KUIViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Okm-Na-hWV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xng-V6-gL4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lxk-cc-r69">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7J-UK-PPS" customClass="KUIRingView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Xng-V6-gL4" firstAttribute="top" secondItem="E7J-UK-PPS" secondAttribute="bottom" id="ItT-s5-emD"/>
+                            <constraint firstAttribute="trailing" secondItem="E7J-UK-PPS" secondAttribute="trailing" id="q23-nc-Jbr"/>
+                            <constraint firstItem="E7J-UK-PPS" firstAttribute="leading" secondItem="Lxk-cc-r69" secondAttribute="leading" id="q7a-vF-CAn"/>
+                            <constraint firstItem="E7J-UK-PPS" firstAttribute="top" secondItem="Okm-Na-hWV" secondAttribute="bottom" id="qgv-Cf-NOb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Menu" id="juY-cZ-pTF"/>
+                    <connections>
+                        <outlet property="ringView" destination="E7J-UK-PPS" id="653-F5-seN"/>
+                        <segue destination="Jlg-2h-hPt" kind="push" identifier="Date" id="HZd-6k-zQH"/>
+                        <segue destination="oT7-r9-kBU" kind="push" identifier="Time" id="LHM-Wn-Reu"/>
+                        <segue destination="dqW-NE-Ow8" kind="push" identifier="Color" id="jFf-EI-XvR"/>
+                        <segue destination="aSe-05-l8Y" kind="push" identifier="Album" id="xZH-Ys-Kny"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JMF-lm-gQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598" y="207"/>
+        </scene>
+        <!--Date View Controller - Date-->
+        <scene sceneID="uat-od-NvN">
+            <objects>
+                <viewController id="Jlg-2h-hPt" customClass="KUIDateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V1D-rz-NAQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="5eg-Lk-fp7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EbR-Cr-dIm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghM-XS-oFt" customClass="KUIRingView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ghM-XS-oFt" firstAttribute="leading" secondItem="EbR-Cr-dIm" secondAttribute="leading" id="8PN-Zz-lxG"/>
+                            <constraint firstAttribute="trailing" secondItem="ghM-XS-oFt" secondAttribute="trailing" id="YFZ-TX-Xi0"/>
+                            <constraint firstItem="5eg-Lk-fp7" firstAttribute="top" secondItem="ghM-XS-oFt" secondAttribute="bottom" id="icy-r5-6Gd"/>
+                            <constraint firstItem="ghM-XS-oFt" firstAttribute="top" secondItem="V1D-rz-NAQ" secondAttribute="bottom" id="opO-s9-YLn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Date" id="JG9-Cs-XpZ"/>
+                    <connections>
+                        <outlet property="ringView" destination="ghM-XS-oFt" id="sSS-Bg-iak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="883-rd-RRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="-1156"/>
+        </scene>
+        <!--Time View Controller - Time-->
+        <scene sceneID="E3S-gY-lgp">
+            <objects>
+                <viewController id="oT7-r9-kBU" customClass="KUITimeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="olS-Ta-9jw"/>
+                        <viewControllerLayoutGuide type="bottom" id="weE-Q0-ScV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U9M-Wv-lzG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUZ-Ga-mbi" customClass="KUIRingView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="weE-Q0-ScV" firstAttribute="top" secondItem="VUZ-Ga-mbi" secondAttribute="bottom" id="VdM-Xn-jt7"/>
+                            <constraint firstItem="VUZ-Ga-mbi" firstAttribute="leading" secondItem="U9M-Wv-lzG" secondAttribute="leading" id="bZi-rb-PiI"/>
+                            <constraint firstItem="VUZ-Ga-mbi" firstAttribute="top" secondItem="olS-Ta-9jw" secondAttribute="bottom" id="jHS-tq-INL"/>
+                            <constraint firstAttribute="trailing" secondItem="VUZ-Ga-mbi" secondAttribute="trailing" id="qwT-8X-k93"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Time" id="T19-at-8KT"/>
+                    <connections>
+                        <outlet property="ringView" destination="VUZ-Ga-mbi" id="Q9N-hu-9kI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APH-ym-hA1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="-473"/>
+        </scene>
+        <!--Color View Controller - Color-->
+        <scene sceneID="Luy-mv-oEV">
+            <objects>
+                <viewController id="dqW-NE-Ow8" customClass="KUIColorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="edX-lL-2QJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="e4t-mV-rHT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gr5-hT-6Fc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hcq-oB-Sxz" customClass="KUIRingView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Hcq-oB-Sxz" secondAttribute="trailing" id="Ahb-RY-RqB"/>
+                            <constraint firstItem="Hcq-oB-Sxz" firstAttribute="top" secondItem="edX-lL-2QJ" secondAttribute="bottom" id="Rcx-rJ-kc1"/>
+                            <constraint firstItem="Hcq-oB-Sxz" firstAttribute="leading" secondItem="Gr5-hT-6Fc" secondAttribute="leading" id="lUK-E1-HlX"/>
+                            <constraint firstItem="e4t-mV-rHT" firstAttribute="top" secondItem="Hcq-oB-Sxz" secondAttribute="bottom" id="r8L-hk-oFZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Color" id="6kn-ba-0bL"/>
+                    <connections>
+                        <outlet property="ringView" destination="Hcq-oB-Sxz" id="QNa-WU-v3d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OzO-hP-FDn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="207"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="of5-d5-aLO">
+            <objects>
+                <viewController id="KyP-8e-NnJ" customClass="KUIImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kOi-8C-yXK"/>
+                        <viewControllerLayoutGuide type="bottom" id="QXv-8M-nbu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7yB-GS-DPN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Ex-av-2dm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="4Ex-av-2dm" firstAttribute="leading" secondItem="7yB-GS-DPN" secondAttribute="leading" id="6Ox-g5-Py5"/>
+                            <constraint firstItem="4Ex-av-2dm" firstAttribute="top" secondItem="7yB-GS-DPN" secondAttribute="top" id="RC9-ix-X5w"/>
+                            <constraint firstItem="QXv-8M-nbu" firstAttribute="top" secondItem="4Ex-av-2dm" secondAttribute="bottom" id="bfY-wm-HJ8"/>
+                            <constraint firstAttribute="trailing" secondItem="4Ex-av-2dm" secondAttribute="trailing" id="veI-Tm-sbX"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="JA9-UA-TTb" appends="YES" id="uMC-y8-YeI"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Exx-74-5m6"/>
+                    <connections>
+                        <outlet property="imageView" destination="4Ex-av-2dm" id="haz-KD-GzR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ye-d8-VH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="JA9-UA-TTb">
+                    <connections>
+                        <action selector="onTap:" destination="KyP-8e-NnJ" id="0cy-eo-Rkq"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1682" y="207"/>
+        </scene>
+        <!--Album View Controller - Album-->
+        <scene sceneID="VtC-uN-xp3">
+            <objects>
+                <viewController id="aSe-05-l8Y" customClass="KUIAlbumViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jqB-mP-m6j"/>
+                        <viewControllerLayoutGuide type="bottom" id="zP9-ug-bak"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sSH-qo-cfa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RW8-Or-0MD" customClass="KUIRingView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RW8-Or-0MD" firstAttribute="top" secondItem="jqB-mP-m6j" secondAttribute="bottom" id="3qQ-a9-SSs"/>
+                            <constraint firstAttribute="trailing" secondItem="RW8-Or-0MD" secondAttribute="trailing" id="9YZ-Ld-xhX"/>
+                            <constraint firstItem="zP9-ug-bak" firstAttribute="top" secondItem="RW8-Or-0MD" secondAttribute="bottom" id="cwt-XX-C8e"/>
+                            <constraint firstItem="RW8-Or-0MD" firstAttribute="leading" secondItem="sSH-qo-cfa" secondAttribute="leading" id="xMk-I5-hIW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Album" id="BYM-RJ-Ep8"/>
+                    <connections>
+                        <outlet property="ringView" destination="RW8-Or-0MD" id="HSv-qo-aut"/>
+                        <segue destination="2SA-g5-zxV" kind="push" identifier="Movie" id="baL-Ca-Eb6"/>
+                        <segue destination="KyP-8e-NnJ" kind="push" identifier="Image" id="NaV-0i-JJa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5a-vi-XvU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="893"/>
+        </scene>
+        <!--Movie View Controller-->
+        <scene sceneID="Ifd-I7-45Y">
+            <objects>
+                <viewController id="2SA-g5-zxV" customClass="KUIMovieViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4yf-cf-Rst"/>
+                        <viewControllerLayoutGuide type="bottom" id="pIa-z8-XMQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8XW-65-9Oe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fTA-Qt-Zw5" appends="YES" id="6Zo-S8-PXq"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="4kL-r9-Rce"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Prr-qk-c6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fTA-Qt-Zw5">
+                    <connections>
+                        <action selector="onTap:" destination="2SA-g5-zxV" id="4mw-6s-TCV"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1682" y="893"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
